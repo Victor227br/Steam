@@ -1,0 +1,220 @@
+body{
+    background-color: #1b2838;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+button{
+border: 0000;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 5vw;
+    width: 100%;
+    background-color: #171a21;
+    flex-direction: row;
+}
+
+.header__logo{
+    display: flex;
+    height: 4vw;
+}
+
+.header__nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:3vw;
+    width: 30vw;
+}
+
+.header__links--nav{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    width: 20vw;
+}
+
+.header__link{
+    font-size: 1,7vw;
+}
+
+.header__profile--chat{
+    display: flex;
+     width: 24vw;
+     align-items: center;
+     justify-content: space-around;
+     margin-right: 2vw;
+}
+
+.header__notifications{
+    display: flex;
+    gap: 4vw;
+    height: 2vw;
+
+}
+
+.header__icons{
+    height: 1.8vw;
+}
+
+.header__profile{
+    height: 4vw;
+}
+
+.hero{
+    display: flex;
+    background-image: url(Img&Png/Steam_files/banner-1.png);
+    background-repeat: no-repeat; 
+    background-position: top;
+   background-position-x:left ;
+    height: 34vw;
+    width: 100%;
+}
+
+.hero__aling{
+    margin: 6vw;
+    width: 24vw;
+}
+
+.hero__call-to-action--text{
+    font-size: 1.5vw;
+}
+
+.hero__button-buy{
+    border-radius: 5px;
+    height: 3.5vw;
+    width: 18vw;
+    color: white;
+    font-size: 1.1vw;
+    background-color: rgb(0, 131, 245);
+    animation: animationScroll 2s;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero__button-buy:hover{
+    transform: scale(1.1);
+}
+
+.container{
+  margin: 5vw;
+}
+
+.container__block--menu{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    height: 5vw;
+    font-size: 1.4vh;
+    background-color: #2e4057;
+    margin-bottom: 2.2vw;
+
+}
+
+.container__aling--menu{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.container__block--input{
+    display: flex;
+    align-items: center;
+    background-color: #2e4057;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    height: 4vw;
+}
+
+.container__block--input input{
+    width: 76vw;
+    height: 2.6vw;
+    color: white;
+    margin-left: 2vw;
+    border-radius: 4px;
+    background-color: #2e4057 ;
+    border: none;
+    outline: none;
+    padding-left: 7px;
+    font-size: 1.3vw;
+}
+
+.container__block--input input ::placeholder{
+    color: #2a2e37;
+}
+
+.container__aling--main-games{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vw;
+    justify-content: space-between;
+
+}
+
+.container__poster-games{
+    flex-wrap: wrap;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 30vw;
+    cursor: pointer;
+}
+
+.container__poster-games img{
+    margin-bottom: 3vw;
+}
+
+.container__nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+
+.container__aling--buttons--nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.container__nav-buttons{
+    width: 20vw;
+    height: 4vw;
+    border-radius: 4px;
+    background-color:rgb(0, 131, 245); 
+    color: white;
+    font-size: 1.6vw;
+    animation: animationScroll 2s;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.container__aling--buttons--nav :hover{
+    background-color:rgb(14, 82, 141) ;
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+
+
+
+
+
