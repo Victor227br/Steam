@@ -1,12 +1,12 @@
 body{
-    background-color: #1b2838;
+    background-color: rgb(14, 19, 30);
     margin: 0;
     padding: 0;
     color: white;
 }
 
 button{
-border: 0000;
+    border: 0000;
 }
 
 .header{
@@ -15,7 +15,7 @@ border: 0000;
     align-items: center; 
     height: 5vw;
     width: 100%;
-    background-color: #171a21;
+    background-color: rgb(27, 40, 56);
     flex-direction: row;
 }
 
@@ -33,7 +33,7 @@ border: 0000;
     width: 30vw;
 }
 
-.header__links--nav{
+.header__links-nav{
     display: flex;
     align-items: center;
     gap: 4vw;
@@ -44,7 +44,7 @@ border: 0000;
     font-size: 1,7vw;
 }
 
-.header__profile--chat{
+.header__profile-chat{
     display: flex;
      width: 24vw;
      align-items: center;
@@ -82,7 +82,7 @@ border: 0000;
     width: 24vw;
 }
 
-.hero__call-to-action--text{
+.hero__call-to-action-text{
     font-size: 1.5vw;
 }
 
@@ -94,10 +94,13 @@ border: 0000;
     font-size: 1.1vw;
     background-color: rgb(0, 131, 245);
     animation: animationScroll 2s;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     transition: transform 0.3s ease-in-out;
 }
 
 .hero__button-buy:hover{
+    background-color:rgb(14, 82, 141) ;
     transform: scale(1.1);
 }
 
@@ -105,20 +108,20 @@ border: 0000;
   margin: 5vw;
 }
 
-.container__block--menu{
+.menu{
     display: flex;
     justify-content: center;
     gap: 1vw;
     flex-wrap: wrap;
     border-radius: 5px;
     height: 5vw;
-    font-size: 1.4vh;
-    background-color: #2e4057;
+    font-size: 0.7vw;
+    background-color: rgb(27, 40, 56);
     margin-bottom: 2.2vw;
 
 }
 
-.container__aling--menu{
+.menu__nav{
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -127,33 +130,33 @@ border: 0000;
     width: 90%;
 }
 
-.container__block--input{
+.search-game{
     display: flex;
     align-items: center;
-    background-color: #2e4057;
+    background-color: rgb(27, 40, 56);
     flex-wrap: wrap;
     border-radius: 3px;
     height: 4vw;
 }
 
-.container__block--input input{
+.search-game input{
     width: 76vw;
     height: 2.6vw;
     color: white;
     margin-left: 2vw;
     border-radius: 4px;
-    background-color: #2e4057 ;
+    background-color: rgb(27, 40, 56);
     border: none;
     outline: none;
     padding-left: 7px;
     font-size: 1.3vw;
 }
 
-.container__block--input input ::placeholder{
+.search-game input ::placeholder{
     color: #2a2e37;
 }
 
-.container__aling--main-games{
+.main-games{
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -162,35 +165,39 @@ border: 0000;
 
 }
 
-.container__poster-games{
+.main-games__poster{
     flex-wrap: wrap;
     background-repeat: no-repeat; 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    flex-wrap: wrap;
     width: 20vw;
     height: 30vw;
     cursor: pointer;
 }
 
-.container__poster-games img{
+.main-games__poster img{
+    display: flex;
+    height: 2.4vw;
+    flex-wrap: wrap;
     margin-bottom: 3vw;
 }
 
-.container__nav{
+.discover{
     display: flex;
     flex-direction: column;
-    margin-top: 3vw;
+    margin-top: 4vw;
+    margin-bottom: 6vw;
 }
 
-.container__aling--buttons--nav{
+.discover__align-buttons{
     display: flex;
     justify-content: space-between;
     margin-top: 2vw;
 }
 
-.container__nav-buttons{
+.discover__button{
     width: 20vw;
     height: 4vw;
     border-radius: 4px;
@@ -203,12 +210,188 @@ border: 0000;
     cursor: pointer;
 }
 
-.container__aling--buttons--nav :hover{
+.discover__button:hover{
     background-color:rgb(14, 82, 141) ;
     transform: scale(1.1);
+}
+
+.more-games{
+    display: flex;
+}
+
+.container__games{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.more-games{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.more-games__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: space-between;
+}
+
+.more-games__block-game{
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    margin-top:  3vw;
 
 }
 
+.more-games__img-game{
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vw;
+    width: 18vw ;
+    margin-bottom: 1vw;
+    border-radius: 3px;
+}
+
+.more-games__title-game{
+    font-size: 1.6vw;
+    margin: 0.2vw;
+}
+
+.more-games__info{
+    display: flex;
+    margin-top: 0;
+    margin-right: 1vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-games__value-discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 1.2vw;
+    height: 2vw;
+    width: 4vw;
+    background-color:rgb(0, 131, 245); 
+}
+
+.more-games__value-old{
+    text-decoration: line-through;
+    font-size: 1.3vw;
+    color: grey;
+
+}
+
+.more-games__value-new{
+    font-size: 1.3vw;
+}
+
+.free-games{
+    display: flex;
+    margin-top: 6vw;
+    flex-direction:column;
+}
+
+.free-games__layout{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+}
+
+.free-games__block-game{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.2vw;
+    padding: 0;
+    background-color: rgb(27, 40, 56);
+    width: 28vw;
+    height: 33vw;
+    border-radius: 3px;
+}
+
+.free-games__title-game{
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: 2vw;
+}
+
+.free-games__term-discount{
+    font-size: 1.4vw;
+    margin-left: 2vw;
+    padding: 0;
+    margin-bottom: 0;
+    color: grey;
+}
+
+.free-games__info{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1vw;
+    font-size: 1.3vw;
+    margin-right: 4vw;
+    justify-content: space-around;
+}
+
+.free-games__value-discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin: 0;
+    height: 2vw;
+    width: 4vw;
+    background-color:rgb(0, 131, 245); 
+}
+
+
+.free-games__value-old{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.free-games-others{
+    display: flex;
+    margin-top: 2.2vw;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26vw;
+    height: 33vw;
+}
+
+.free-games-others__block{
+    display: flex;
+    flex-direction: column;
+    width: 29.5vw;
+    height: 16vw;
+    background-color: rgb(27, 40, 56);
+    border-radius: 4px;
+}
+
+.free-games__img-other-game{
+    height: 12vw;
+}
+
+.free-games-others__info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3vw;
+    justify-content: space-around;
+
+}
 
 
 
