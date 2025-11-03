@@ -41,7 +41,7 @@ button{
 }
 
 .header__link{
-    font-size: 1,7vw;
+    font-size: 1.3vw;
 }
 
 .header__profile-chat{
@@ -71,10 +71,18 @@ button{
     display: flex;
     background-image: url(Img&Png/Steam_files/banner-1.png);
     background-repeat: no-repeat; 
+    object-fit: cover;
     background-position: top;
    background-position-x:left ;
+   flex-wrap: wrap;
     height: 34vw;
     width: 100%;
+}
+
+.hero__logo{
+    height: 7vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hero__aling{
@@ -87,6 +95,10 @@ button{
 }
 
 .hero__button-buy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
     height: 3.5vw;
     width: 18vw;
@@ -168,6 +180,7 @@ button{
 .main-games__poster{
     flex-wrap: wrap;
     background-repeat: no-repeat; 
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -296,11 +309,14 @@ button{
     display: flex;
     margin-top: 6vw;
     flex-direction:column;
+    margin-top: 2.2vw;
+
 }
 
 .free-games__layout{
     display: flex;
     flex-direction: row;
+    margin-top: 2vw;
     gap: 2vw;
     align-items: center;
 }
@@ -308,12 +324,15 @@ button{
 .free-games__block-game{
     display: flex;
     flex-direction: column;
-    margin-top: 2.2vw;
     padding: 0;
     background-color: rgb(27, 40, 56);
-    width: 28vw;
-    height: 33vw;
+    width: 29vw;
+    height: 34vw;
     border-radius: 3px;
+}
+
+.free-games__img-game{
+    border-radius: 4px;
 }
 
 .free-games__title-game{
@@ -338,10 +357,11 @@ button{
     padding: 0;
     flex-direction: row;
     align-items: center;
-    margin-left: 1vw;
-    font-size: 1.3vw;
-    margin-right: 4vw;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 19vw;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    justify-content: space-between;
 }
 
 .free-games__value-discount{
@@ -351,7 +371,7 @@ button{
     border-radius: 6px;
     margin: 0;
     height: 2vw;
-    width: 4vw;
+    width: 4.5vw;
     background-color:rgb(0, 131, 245); 
 }
 
@@ -363,24 +383,25 @@ button{
 
 .free-games-others{
     display: flex;
-    margin-top: 2.2vw;
     flex-direction: column;
     justify-content: space-between;
-    width: 26vw;
-    height: 33vw;
+    gap: 2vw;
+    width: 29vw;
+    height: 34vw;
 }
 
 .free-games-others__block{
     display: flex;
     flex-direction: column;
-    width: 29.5vw;
+    width: 28vw;
     height: 16vw;
     background-color: rgb(27, 40, 56);
     border-radius: 4px;
 }
 
 .free-games__img-other-game{
-    height: 12vw;
+    border-radius: 4px;
+    height: 11.5vw;
 }
 
 .free-games-others__info{
