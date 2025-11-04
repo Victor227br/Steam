@@ -20,8 +20,8 @@
 
     <div class="header__profile-chat">
         <div class="header__notifications">
-            <img class="header__icons" src="Img&Png/icons8-notification-forma-light/icons8-notification-48.png" alt="">
-            <img class="header__icons" src="Img&Png/icons8-balão-de-fala-50.png" alt="">
+            <img class="header__icons--notification" src="Img&Png/icons8-notification-forma-light/icons8-notification-48.png" alt="">
+            <img class="header__icons--chat" src="Img&Png/icons8-balão-de-fala-50.png" alt="">
         </div>
             <img class="header__profile" src="Img&Png/icon-profile/icons8-profile-64.png" alt="">
     </div>
@@ -38,11 +38,21 @@
 <section class="container">
     <div class="menu">
         <div class="menu__nav">
-         <h2>NOVIDADES E TENDÊNCIAS</h2>
-         <h2>CATEGORIAS</h2>
-         <h2>LOJA DE PONTOS </h2>
-         <h2> NOTÍCIAS</h2>
-         <h2>LABORATÓRIO</h2> 
+            <div class="menu__nav-block">
+                <h3>NOVIDADES E TENDÊNCIAS</h3>
+            </div>
+            <div class="menu__nav-block">
+                <h3>CATEGORIAS</h3>
+            </div>
+            <div class="menu__nav-block">
+                <h3>LOJA DE PONTOS </h3>
+            </div>
+            <div class="menu__nav-block">
+                <h3> NOTÍCIAS</h3>
+            </div>
+            <div class="menu__nav-block">
+                <h3>LABORATÓRIO</h3> 
+            </div>
         </div>
     </div>
 
@@ -52,8 +62,8 @@
     </div>
 
     <div class="main-games">
-        <div style="background-image: url(Img&Png/Steam_files/forzaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-forza.svg" alt=""></div>
-        <div style="background-image: url(Img&Png/Steam_files/farcry6poster.png) ;" class="main-games__poster"><img src="Img&Png/Steam_files/logo-farcry.svg" alt=""></div>
+        <div id="posterForzan" style="background-image: url(Img&Png/Steam_files/forzaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-forza.svg" alt=""></div>
+        <div  style="background-image: url(Img&Png/Steam_files/farcry6poster.png) ;" class="main-games__poster"><img src="Img&Png/Steam_files/logo-farcry.svg" alt=""></div>
         <div  style="background-image: url(Img&Png/Steam_files/fifaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-fifa.svg" alt=""></div>
         <div  style="background-image: url(Img&Png/Steam_files/minecraftposter.png);" class="main-games__poster"><img src="Img&Png/Steam_files/logo-minecraft.svg" alt=""></div>
     </div>
@@ -69,7 +79,7 @@
     </div>
 
     <section class="more-games">
-        <h2>Mais Jogos</h2>
+        <h2 class="more-games__text">Mais Jogos</h2>
         <div class="more-games__list">
             <div class="more-games__block-game">
                 <img class="more-games__img-game"  src="Img&Png/Steam_files/download-game1.png" alt="">
@@ -208,8 +218,11 @@
             </div>
         </div>
         </div>
-    </div>
 </section>
+
+  <footer class="footer-container">
+            <img class="footer-container__logo" src=Img&Png/icons8-circulado-a-vapor-ios-17-filled/icons8-circulado-a-vapor-50.png alt="">
+        </footer>
 
 </body>
 </html>
