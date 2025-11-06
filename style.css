@@ -130,8 +130,6 @@ h2{
     background-image: url(Img&Png/Steam_files/banner-1.png);
     background-repeat: no-repeat; 
     background-size:cover ;
-    background-position: top; 
-    background-position-x: left;
     flex-wrap: wrap;
     height: 34vw;
     width: 100%;
@@ -507,13 +505,13 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 7vw;
+    height: 5vw;
     background-color: rgb(27, 40, 56);
 
 }
 
 .footer-container__logo{
-    height: 4.5vw;
+    height: 4vw;
 }
 
 @media (max-width: 470px) {
@@ -551,8 +549,12 @@ h2{
     padding: 0;
 }
 
-.header__notification-hover{
+.header__notification-hover:hover{
     background-color:rgb(0, 131, 245);;
+}
+
+.header__chat-hover{
+    display: none;
 }
 
 
@@ -628,7 +630,6 @@ h2{
 
 .menu__nav{
     display: flex;
-    /* margin: 5vw; */
     font-size: 3.2vw;
     align-items: center;
     justify-content:center;
@@ -835,20 +836,31 @@ h2{
     display: none;
 }
 
-.header__notification{
+.header__notifications{
  display: flex;
  align-items: center;
+ justify-content: center;
 }
 
 .header__icons--notification{
+    display: flex;
     margin: 0;
     padding: 0;
-    height: 3vw;
+    height: 4vw;
+}
+
+.header__notification-hover{
+    height: 6vw;
+    width: 6vw;
+}
+
+.header__chat-hover{
+    display: none;
 }
 
 .header__profile-chat{
     display: flex;
-    gap:6vw;
+    gap:2vw;
     align-items: center;
     justify-content: center;
 }
@@ -1027,9 +1039,6 @@ h2{
 .footer-container__logo{
     height: 12vw;
 }
-
-
-
 }
 
 
