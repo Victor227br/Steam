@@ -478,7 +478,7 @@ h2{
 
 .free-games__img-other-game{
     border-radius: 4px;
-    height: 11.5vw;
+    height: 60px;
 }
 
 .free-games-others__info{
@@ -488,11 +488,10 @@ h2{
     align-items: center;
     font-size: 1.3vw;
     justify-content: space-around;
-
 }
 
 .free-games-others__info h3{
-    font-size: 2vw;
+    font-size: 15px;
     margin: 0;
 }
 
@@ -500,7 +499,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5vw;
+    height: 80px;
     background-color: rgb(27, 40, 56);
 
 }
@@ -573,7 +572,7 @@ h2{
     justify-content: center ;
     gap: 2vw;
     align-items: center;
-    margin-right: 7vw;
+    margin-right: 20px;
 
 }
 
@@ -589,46 +588,46 @@ h2{
 
 .hero{
     display: flex;
-    height: 92vw;
+    height: 92%;
 }
 
 .hero__logo{
-    height: 18vw;
+    height: 60px;
 }
 
 .hero__aling{
-    margin: 6vw;
-    width: 58vw;
+    margin: 6%;
+    width: 58%;
 }
 
 .hero__call-to-action-text{
-    font-size: 4.7vw;
+    font-size: 18px;
 }
 
 .hero__button-buy{
-    font-size: 3.4vw;
-    width: 40vw;
-    height: 10vw;
+    font-size: 13px;
+    width: 190px;
+    height: 36px;
 }
 
-
 .container{
-  margin: 5vw;
+  margin: 5%;
 }
 
 .menu{
-    margin-bottom: 8vw;
-    height: 64vw;
-
+    margin-bottom: 8%;
+    height: auto;
 }
 
 .menu__nav{
     display: flex;
-    font-size: 3.2vw;
+    font-size: 13px;
     align-items: center;
     justify-content:center;
     flex-direction: column;
-    gap: 4vw;
+    gap: 15px;
+    margin-top: 20px ;
+    margin-bottom: 20px;
 }
 
 .menu__nav-block{
@@ -644,31 +643,30 @@ h2{
 }
 
 .search-game{
-    height: 10vw;
+    height: 45px;
     margin-bottom: 14vw;
 }
 
 .search-game input{
-    font-size: 4vw;
+    font-size: 24px;
     width: 100%;
-    height: 9vw;
+    height: 42px;
 }
 
 .main-games{
-    gap: 5vw;
+    gap: 20px;
     flex-direction: column;
 }
 
 .main-games__poster{
     width: 100%;
-    height: 90vw;
+    height: 500px;
 }
 
-
 .main-games__poster img{
-    margin-bottom: 4vw;
-    height: 10vw;
-    width: 25%;
+    margin-bottom: 30px;
+    height: 20vw;
+    width: 55%;
 }
 
 .discover{
@@ -677,19 +675,17 @@ h2{
     justify-content: center;
 }
 
-
 .discover__align-buttons{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 4%;
-    gap: 6%;
-
+    gap: 20px;
 }
 
 .discover__button{
-    font-size: 5vw;
-    height: 12vw;
+    font-size: 22px;
+    height: 50px;
     width: 100%;
     animation: none;
 }
@@ -699,12 +695,10 @@ h2{
     transform: none;
 }
 
-
 .more-games{
     display: flex;
     flex-direction: row;
 }
-
 
 .more-games__block-game{
     flex-wrap: wrap;
@@ -713,71 +707,70 @@ h2{
 }
 
 .more-games__img-game{
-    height: 28vw;
-    width: 43vw ;
+    height: 96px;
+    width: 42vw ;
     border-radius: 3px;
 }
 
 .more-games__title-game{
-    font-size: 3.5vw;
-    margin: 1vw;
+    font-size: 17px;
+    margin: 4px;
 }
 
-
 .more-games__value-discount{
-    border-radius: 6px;
-    font-size: 3.2vw;
-    height: 6vw;
-    width: 10vw;
+    border-radius: 4px;
+    font-size: 15px;
+    height: 20px;
+    width: 40px;
 }
 
 .more-games__value-old{
-    font-size: 3.2vw;
+    font-size: 14px;
 }
 
 .more-games__value-new{
-    font-size: 3.2vw;
+    font-size: 14px;
 }
 
 .free-games{
-    margin-top: 8vw;
-    /* margin-bottom: 20vw; */
+    margin-top: 7%;
 }
 
 .free-games__layout{
     align-items: normal;
-    gap: 5vw;               
+    gap: 20px;               
     flex-direction: column;
 }
 
 .free-games__block-game{
-    width: 90vw;
-    height: 100vw;
+    width: 100%;
+    height: auto;
 }
 
 .free-games__title-game{
-    font-size: 8vw;
+    font-size: 26px;
 }
 
 .free-games__info{
-    margin-left: 3vw;
-    width: 70vw;
+    margin-left: 3%;
+    width: 70%;
     flex-direction: row;
-    font-size: 5vw;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 
 .free-games__value-discount{
-    border-radius: 5px;
-    height: 6vw;
+    border-radius: 4px;
+    height: 3vh;
     width: 16vw;
 }
 
 .free-games__term-discount{
-    font-size: 5vw;
+    font-size: 15px;
 }
 
 .free-games-others{
-    gap: 5vw;
+    gap: 10px;
 }
 
 .free-games-others__block{
