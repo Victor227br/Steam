@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steam</title>
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 </head>
 <body>
     <header class="header">
@@ -59,10 +62,10 @@
 
     <div class="main-games">
         <div class="main-games__slider multiple-items">
-            <div id="posterForzan" style="background-image: url(Img&Png/Steam_files/forzaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-forza.svg" alt=""></div>
-            <div style="background-image: url(Img&Png/Steam_files/farcry6poster.png) ;" class="main-games__poster"><img src="Img&Png/Steam_files/logo-farcry.svg" alt=""></div>
-            <div style="background-image: url(Img&Png/Steam_files/fifaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-fifa.svg" alt=""></div>
-            <div style="background-image: url(Img&Png/Steam_files/minecraftposter.png);" class="main-games__poster"><img src="Img&Png/Steam_files/logo-minecraft.svg" alt=""></div>
+ <div id="posterForzan" style="background-image: url(Img&Png/Steam_files/forzaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-forza.svg" alt=""></div>
+        <div style="background-image: url(Img&Png/Steam_files/farcry6poster.png) ;" class="main-games__poster"><img src="Img&Png/Steam_files/logo-farcry.svg" alt=""></div>
+        <div style="background-image: url(Img&Png/Steam_files/fifaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-fifa.svg" alt=""></div>
+        <div style="background-image: url(Img&Png/Steam_files/minecraftposter.png);" class="main-games__poster"><img src="Img&Png/Steam_files/logo-minecraft.svg" alt=""></div>
         </div>
     </div>
 
@@ -222,11 +225,16 @@
             <img class="footer-container__logo" src=Img&Png/icons8-circulado-a-vapor-ios-17-filled/icons8-circulado-a-vapor-50.png alt="">
     </footer>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
 <script>
 $(document).ready(function () {
 
   function initMobileSlick() {
-    if ($(window).width() <= 767) {
+    if ($(window).width() <= 600) {
       if (!$('.multiple-items').hasClass('slick-initialized')) {
         $('.multiple-items').slick({
           slidesToShow: 1,
