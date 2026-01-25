@@ -122,7 +122,6 @@ h2{
     height: 28px;
 }
 
-
 .header__profile{
     height: 4vw;
 }
@@ -243,6 +242,12 @@ h2{
     justify-content: space-between;
 }
 
+.main-games__slider{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-games__poster{
     flex-wrap: wrap;
     background-size: cover;
@@ -252,9 +257,18 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    width: 24%;
-    height: 90vh;
+    width: 23%;
+    height: 88vh;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-games__poster:hover{
+    transform: scale(1.1);
+}
+
+.slick-slide {
+  padding: 0 10px;
 }
 
 #posterForzan{
@@ -328,9 +342,14 @@ h2{
 .more-games__block-game{
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
     flex-wrap: wrap;
     margin-top:  3%;
+}
 
+.more-games__block-game:hover{
+    transform: scale(1.1);
 }
 
 .more-games__img-game{
@@ -402,7 +421,7 @@ h2{
     padding: 0;
     background-color: rgb(27, 40, 56);
     width: 29vw;
-    height: 34vw;
+    height: 72vh;
     border-radius: 3px;
 }
 
@@ -435,6 +454,7 @@ h2{
     flex-wrap: wrap;
     width: 80%;
     margin-left: 8%;
+    margin-top: 4%;
     font-size: 18px;
     justify-content: space-between;
 }
@@ -451,7 +471,6 @@ h2{
     background-color:rgb(0, 131, 245); 
 }
 
-
 .free-games__value-old{
     text-decoration: line-through;
     color: grey;
@@ -461,9 +480,8 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 8px;
+    gap: 2.7vw;
     width: 29vw;
-    height: 34vw;
 }
 
 .free-games-others__block{
@@ -471,7 +489,7 @@ h2{
     flex-direction: column;
     width: 28vw;
     cursor: pointer;
-    height: 16vw;
+    height: 33vh;
     background-color: rgb(27, 40, 56);
     border-radius: 4px;
 }
@@ -550,7 +568,6 @@ h2{
     display: none;
 }
 
-
 .header__nav{
     width: 40%;
 }
@@ -573,7 +590,6 @@ h2{
     gap: 2vw;
     align-items: center;
     margin-right: 20px;
-
 }
 
 .header__notifications{
@@ -730,14 +746,12 @@ h2{
 
 .more-games__value-old{
     font-size: 12.5px;
-      white-space: nowrap;
-
+    white-space: nowrap;
 }
 
 .more-games__value-new{
     font-size: 12.5px;
-      white-space: nowrap;
-
+    white-space: nowrap;
 }
 
 .free-games{
@@ -785,7 +799,7 @@ h2{
 
 .free-games-others__block{
     width: 90vw;
-    height: 90vw;
+    height: 67vw;
 }
 
 .free-games__img-other-game{
@@ -801,14 +815,13 @@ h2{
 }
 
 .footer-container{
-    margin-top: 115%;
-    height: 16vw;
+    margin-top: 15%;
+    height: 10vh;
 }
 
 .footer-container__logo{
-    height: 12vw;
+    height: 7vh;
 }
-
 }
 
 @media (min-width: 470px) and (max-width: 1024px){
@@ -819,8 +832,8 @@ h2{
 }
 
 .header__logo{
-    height: 64px;
-    margin-left: 4vw;
+    height: 6vh;
+    margin-left: 9%;
 }
 
 .header__links-nav{
@@ -832,21 +845,21 @@ h2{
 }
 
 .header__notifications{
- display: flex;
- align-items: center;
- justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__icons--notification{
     display: flex;
+    height: 3.6vh;
     margin: 0;
     padding: 0;
-    height: 44px;
 }
 
 .header__notification-hover{
-    height: 6vw;
-    width: 6vw;
+    height: 7vw;
+    width: 7vw;
 }
 
 .header__chat-hover{
@@ -861,15 +874,11 @@ h2{
 }
 
 .header__profile{
-    height: 6vw;
+    height: 5.6vh;
 }
 
 h2{
-    font-size: 4.5vw;
-}
-
-.hero{
-    height: 80%;
+    font-size: 4vw;
 }
 
 .hero__logo{
@@ -886,9 +895,9 @@ h2{
 }
 
 .hero__button-buy{
-    width: 25vw;
-    height: 4vh;
-    font-size: 19px;
+    width: 52%;
+    height: 4.4vh;
+    font-size: 20px;
 }
 
 .menu{
@@ -905,8 +914,14 @@ h2{
     font-size: 3vw;
 }
 
+.main-games__slider{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-games__poster{
-    height: 40vw;
+    height: 40vh;
 }
 
 .main-games__poster img{
@@ -918,8 +933,8 @@ h2{
 }
 
 .discover__button{
-    height: 5.2vw;
-    font-size: 20px;
+    height: 4.2vh;
+    font-size: 2.5vw;
 }
 
 .more-games__list{
@@ -927,7 +942,7 @@ h2{
 }
 
 .more-games__list{
-    gap: 5vw;
+    gap: 5%;
 }
 
 .more-games__img-game{
@@ -940,7 +955,7 @@ h2{
 }
 
 .more-games__value-discount{
-    height: 4vw;
+    height: 2.8vh;
     width: 8vw;
     font-size: 3vw;
 }
@@ -959,6 +974,9 @@ h2{
 
 .free-games__layout{
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: auto;
     gap: 5vw;
 }
 
@@ -968,11 +986,11 @@ h2{
 
 .free-games__block-game{
     width: 84vw;
-    height: 82vw;
+    height: 62vh;
 }
 
 .free-games__title-game{
-    font-size: 6vw;
+    font-size: 4.8vw;
     margin-top: 2vw;
 }
 
@@ -989,7 +1007,7 @@ h2{
 .free-games__value-discount{
     font-size: 3vw;
     width: 12vw;
-    height: 5vw;
+    height: 3.6vh;
 }
 
 .free-games__value-old{
@@ -1010,7 +1028,7 @@ h2{
 
 .free-games-others__block{
     width: 85vw;
-    height: 72vw;
+    height: 35vh;
 }
 
 .free-games__img-other-game{
@@ -1027,13 +1045,14 @@ h2{
 }
 
 .footer-container{
-    margin-top: 55vw;
-    height: 16vw;
+    margin-top: 2%;
+    height: 12vh;
 }
 
 .footer-container__logo{
-    height: 12vw;
+    height: 8vh;
 }
+
 }
 
 
