@@ -44,21 +44,11 @@
 <section class="container">
     <div class="menu">
         <div class="menu__nav">
-            <div class="menu__nav-block">
-                <h3>NOVIDADES E TENDÊNCIAS</h3>
-            </div>
-            <div class="menu__nav-block">
-                <h3>CATEGORIAS</h3>
-            </div>
-            <div class="menu__nav-block">
-                <h3>LOJA DE PONTOS </h3>
-            </div>
-            <div class="menu__nav-block">
-                <h3> NOTÍCIAS</h3>
-            </div>
-            <div class="menu__nav-block">
-                <h3>LABORATÓRIO</h3> 
-            </div>
+            <div class="menu__nav-block"><h3>NOVIDADES E TENDÊNCIAS</h3></div>
+            <div class="menu__nav-block"><h3>CATEGORIAS</h3></div>
+            <div class="menu__nav-block"><h3>LOJA DE PONTOS </h3></div>
+            <div class="menu__nav-block"><h3>NOTÍCIAS</h3></div>
+            <div class="menu__nav-block"><h3>LABORATÓRIO</h3> </div>
         </div>
     </div>
 
@@ -68,10 +58,12 @@
     </div>
 
     <div class="main-games">
-        <div id="posterForzan" style="background-image: url(Img&Png/Steam_files/forzaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-forza.svg" alt=""></div>
-        <div  style="background-image: url(Img&Png/Steam_files/farcry6poster.png) ;" class="main-games__poster"><img src="Img&Png/Steam_files/logo-farcry.svg" alt=""></div>
-        <div  style="background-image: url(Img&Png/Steam_files/fifaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-fifa.svg" alt=""></div>
-        <div  style="background-image: url(Img&Png/Steam_files/minecraftposter.png);" class="main-games__poster"><img src="Img&Png/Steam_files/logo-minecraft.svg" alt=""></div>
+        <div class="main-games__slider multiple-items">
+            <div id="posterForzan" style="background-image: url(Img&Png/Steam_files/forzaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-forza.svg" alt=""></div>
+            <div style="background-image: url(Img&Png/Steam_files/farcry6poster.png) ;" class="main-games__poster"><img src="Img&Png/Steam_files/logo-farcry.svg" alt=""></div>
+            <div style="background-image: url(Img&Png/Steam_files/fifaposter.png);"  class="main-games__poster"><img src="Img&Png/Steam_files/logo-fifa.svg" alt=""></div>
+            <div style="background-image: url(Img&Png/Steam_files/minecraftposter.png);" class="main-games__poster"><img src="Img&Png/Steam_files/logo-minecraft.svg" alt=""></div>
+        </div>
     </div>
 
     <div class="discover">
@@ -176,7 +168,7 @@
         </div>
     </section>
 
-    <div class="free-games">
+<div class="free-games">
         <h2>Jogos Gratuitos</h2>
         <div class="free-games__layout">
             <div class="free-games__main">
@@ -223,12 +215,46 @@
                 </div>         
             </div>
         </div>
-        </div>
+    </div>
 </section>
 
   <footer class="footer-container">
             <img class="footer-container__logo" src=Img&Png/icons8-circulado-a-vapor-ios-17-filled/icons8-circulado-a-vapor-50.png alt="">
-        </footer>
+    </footer>
+
+<script>
+$(document).ready(function () {
+
+  function initMobileSlick() {
+    if ($(window).width() <= 767) {
+      if (!$('.multiple-items').hasClass('slick-initialized')) {
+        $('.multiple-items').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+          swipe: true,
+          touchMove: true,
+          centerMode: true,
+          centerPadding: '0px'
+        });
+      }
+    } else {
+      if ($('.multiple-items').hasClass('slick-initialized')) {
+        $('.multiple-items').slick('unslick');
+      }
+    }
+  }
+
+  initMobileSlick();
+
+  $(window).on('resize', function () {
+    initMobileSlick();
+  });
+
+});
+</script>
+
 
 </body>
 </html>
