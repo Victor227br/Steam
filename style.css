@@ -234,41 +234,32 @@ h2{
     color: #2a2e37;
 }
 
-.main-games{
-    flex-wrap: wrap;
+ .main-games {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     margin-top: 6%;
-    justify-content: space-between;
 }
 
-.main-games__slider{
+.main-games__slider {
+    display: flex;
     width: 100%;
-    display: flex;
     justify-content: space-between;
 }
 
-.main-games__poster{
-    flex-wrap: wrap;
-    background-size: cover;
-    background-position: top;
+.main-games__poster {
+    width: 23%;
     display: flex;
-    background-color: hsla(0, 0%, 0%, 0.7);
-    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    width: 23%;
-    height: 88vh;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
-.main-games__poster:hover{
+.main-games__poster:hover {
     transform: scale(1.1);
-}
-
-.slick-slide {
-  padding: 0 10px;
 }
 
 #posterForzan{
@@ -279,10 +270,12 @@ h2{
 
 .main-games__poster img{
     display: flex;
+    display: flex;
     height: 38px;
     flex-wrap: wrap;
     margin-bottom: 20%;
 }
+
 
 .discover{
     display: flex;
@@ -526,7 +519,7 @@ h2{
     height: 4vw;
 }
 
-@media (max-width: 470px) {
+@media (max-width: 600px) {
 
 h2{
     font-size: 28px;
@@ -669,20 +662,38 @@ h2{
     height: 42px;
 }
 
-.main-games{
+ .main-games{
+    display: flex;
     gap: 20px;
-    flex-direction: column;
+    height: auto;
+    margin-top: 6%;
+
 }
 
-.main-games__poster{
+.main-games__slider {
     width: 100%;
-    height: 500px;
 }
 
-.main-games__poster img{
-    margin-bottom: 30px;
-    height: 20vw;
+.main-games__poster {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 2;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-games__poster:hover {
+    transform: scale(1.0);
+  }
+
+.main-games__poster img {
+    position: absolute;
+    left: 50%;
+    bottom: 24px;            
+    transform: translateX(-50%);
     width: 55%;
+    max-width: 200px;
+    height: auto;
 }
 
 .discover{
@@ -776,9 +787,9 @@ h2{
 
 .free-games__info{
     margin-left: 5%;
-    width: 70%;
+    width: 80%;
     flex-direction: row;
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -789,7 +800,7 @@ h2{
 }
 
 .free-games__term-discount{
-    font-size: 15px;
+    font-size: 18px;
     margin-left: 5%;
 }
 
@@ -824,7 +835,7 @@ h2{
 }
 }
 
-@media (min-width: 470px) and (max-width: 1024px){
+@media (min-width: 601px) and (max-width: 1024px){
     
 .header{
     height: 8vh;
