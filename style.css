@@ -90,7 +90,7 @@ h2{
     transition: width 0.5s ease-out, 0.3s ease-out;  
     height: 35px;
     width: 35px;
-    border-radius: 50vw;
+    border-radius: 50;
 }
 
 .header__notification-hover:hover{
@@ -987,7 +987,7 @@ h2{
 }
 
 .free-games{
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 .free-games__layout{
@@ -999,27 +999,30 @@ h2{
 }
 
 .free-games__img-game{
-    height: 38vw;
+    height: 38vh;
 }
 
 .free-games__block-game{
     width: 84vw;
-    height: 62vh;
+    height: 64vh;
 }
 
 .free-games__title-game{
-    font-size: 4.8vw;
-    margin-top: 2vw;
+    font-size:  280%;
+    margin-top: 4%;
+    margin-bottom: 2%;
 }
 
 .free-games__info{
     flex-direction: row;
-    width: 50vw;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 70%;
 }
 
 .free-games__term-discount{
-    font-size: 4vw;
-    margin-bottom: 2vw;
+    font-size: 210%;
+    margin-bottom: 1%;
 }
 
 .free-games__value-discount{
@@ -1029,7 +1032,7 @@ h2{
 }
 
 .free-games__value-old{
-    font-size: 3.4vw;
+    font-size: 166%;
 }
 
 .free-games__value-new{
@@ -1038,29 +1041,27 @@ h2{
 
 .free-games-others{
     justify-content: space-around;
-    gap: 4vw;
-    margin-bottom: 18vw;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 10%;
     flex-direction: column;
-    width: 86vw;
+    width: 100%;
 }
 
 .free-games-others__block{
-    width: 85vw;
+    width: 94%;
     height: 35vh;
 }
 
 .free-games__img-other-game{
     border-radius: 4px;
-    height: 36vw;
+    height: 28vh;
 }
 
 .free-games-others__info h3{
-    font-size: 4vw;
+    font-size: 182%;
 }
 
-.free-games-others__info{
-    font-size: 5vw;
-}
 
 .footer-container{
     margin-top: 2%;
